@@ -21,25 +21,6 @@ const (
 	ENV_FILE = ".env"
 )
 
-//
-// type Core struct {
-// 	Parts []map[string]string
-// 	// Role  string
-// }
-
-// type Inner struct {
-// 	Content      map[string][]map[string]string
-// 	FinishReason any
-// 	AvgLogprobs  any
-// }
-//
-// type Data struct {
-// 	Candidates              []Inner
-// 	UsageMetadata           any
-// 	CandidatesTokensDetails any
-// 	ModelVersion            any
-// }
-
 func main() {
 	err := godotenv.Load(ENV_FILE)
 	if err != nil {
