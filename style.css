@@ -1,0 +1,80 @@
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+
+}
+
+
+html{
+    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF2F2;
+    /*background-image: linear-gradient(hsl(341, 70%, 24%) 1px,transparent 2px 100%),linear-gradient(90deg,hsl(341, 70%, 24%) 1px,transparent 2px 100%);*/
+    background-image: linear-gradient(rgb(100,100,100) 1px,transparent 2px 100%),linear-gradient(90deg,rgb(100,100,100) 1px,transparent 2px 100%);
+    background-size: 25px 25px;
+}
+
+body{
+    font-family: centuryGothic;
+    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@media (max-width: 800px) {
+    #backgroundText{
+      font-size: 0px;
+    }
+  }
+
+#landing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(transparent,hsla(0, 100%, 97%, 1) 60%);
+    align-items: center;
+    
+}
+
+h1{
+    margin: 0;
+    font-size: 13rem;
+    font-weight: 900;
+    
+    position: relative;
+}
+
+
+.title_holder{
+    
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    padding: 30px;
+    display: flex;
+    
+    
+}
+
+
+.title::before{
+    content: '';
+    height: 1rem;
+    width: 60%;
+    background-color: hsl(341, 70%, 24%);
+    border: 2px solid black;
+    border-radius: 3px;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+    z-index: inherit;
+
+
+}
