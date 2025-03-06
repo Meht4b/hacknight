@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +13,24 @@
 
 
     <div class="playlist_container">
+      <div class="video_holder_container">
+        <div class="video_holder">
+          <h2>Rust is Killing C++</h2>
+          <div class="youtube_video_embed">
+            <iframe
+              src="https://www.youtube.com/embed/ZQyrrMqLT2s?si=uy4oZv10t3Zptgjw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="video_holder"></div>
 
-        <div class="video_holder_container">
+        <div class="video_holder"></div>
+        <div class="video_holder"></div>
 
             <div class="video_holder">
                 
@@ -60,6 +76,12 @@
             </div>
         </div> 
 
+      <div class="ai_textbox_container">
+        <div class="textbox_input_container">
+          <input type="text" class="textbox_input" id="text_input" />
+          <button class="textbox_button" id="text_button">+</button>
+        </div>
+      </div>
     </div>
     
     <script src="script.js"></script>
