@@ -133,7 +133,7 @@ h2{
     display: flex;
     
     align-items: center;
-    justify-content: space-around;
+
     gap: 20px;
 
 }
@@ -146,6 +146,8 @@ h2{
 
 .youtube_video_details{
     min-height:300px ;
+
+    width: calc(100% - 600px);
 }
 
 .youtube_video_details h2{
@@ -153,6 +155,7 @@ h2{
     box-shadow: 10px 10px #4B164C;
     padding: 10px;
     font-size: 35px;
+    width: 100%;
 }
 
 .ai_textbox_container{
@@ -161,8 +164,7 @@ h2{
     width: 400px;
     border-radius: 5px;
     background-color: #F8E7F6;
-
-    
+   
 }
 
 .textbox_input_container{
