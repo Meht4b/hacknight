@@ -11,19 +11,27 @@ html{
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-color: #FFF2F2;
-    /*background-image: linear-gradient(hsl(341, 70%, 24%) 1px,transparent 2px 100%),linear-gradient(90deg,hsl(341, 70%, 24%) 1px,transparent 2px 100%);*/
-    background-image: linear-gradient(rgb(100,100,100) 1px,transparent 2px 100%),linear-gradient(90deg,rgb(100,100,100) 1px,transparent 2px 100%);
-    background-size: 25px 25px;
+    background-color: white;
+    /*
+    background-image: radial-gradient(black 10%,transparent 10%);
+    background-size: 1rem 1rem;*/
+
+
+
 }
 
 body{
     font-family: centuryGothic;
-    
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #F5F5F5;
+   
+    
+
     
 }
 
@@ -49,6 +57,10 @@ h1{
     font-weight: 900;
     
     position: relative;
+}
+
+h2{
+    font-size: 30px;
 }
 
 
@@ -77,4 +89,86 @@ h1{
     z-index: inherit;
 
 
+}
+
+.playlist_container{
+    display: flex;
+    width: 90vw;
+    padding: 20px;
+    gap: 0px;
+}
+
+.video_holder_container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+.video_holder_container::-webkit-scrollbar{
+    display: none;
+}
+
+.video_holder{
+    
+    background-color: hsl(0, 0%, 97%)   ;
+    border: solid 2px  #4B164C;
+    /* box-shadow: 10px 10px hsl(0,0%,93%); */
+    
+    width: 95%;
+    border-radius: 5px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.youtube_video_embed iframe{
+    height: 300px;
+    width: 533.33px;
+}
+
+.ai_textbox_container{
+    height: 100%;
+    border: solid 2px  #4B164C;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+
+    
+}
+
+.textbox_input_container{
+    display: flex;
+    width: 90%;
+    margin: 10px;
+    border: solid 2px  #4B164C;
+    border-radius: 5px;
+}
+
+
+.textbox_input{
+    width: 80%;
+    font-family: centuryGothic;
+    border-top-left-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 5px;
+    font-size: 25px;
+}
+
+.textbox_button{
+    width: 10%;
+    font-size: 25px;
+    font-family: centuryGothic;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: white;
 }
