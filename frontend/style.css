@@ -12,6 +12,8 @@ html{
     margin: 0;
     padding: 0;
     background-color: white;
+    margin: 0;
+    padding: 0;
     /*
     background-image: radial-gradient(black 10%,transparent 10%);
     background-size: 1rem 1rem;*/
@@ -22,7 +24,7 @@ html{
 
 body{
     font-family: centuryGothic;
-    display: flex;
+    
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -91,11 +93,16 @@ h2{
 
 }
 
+.navbar{
+    height: 10vh;
+}
+
 .playlist_container{
     display: flex;
-    width: 90vw;
+    width: 95vw;
     padding: 20px;
-    gap: 0px;
+    gap: 30px;
+    height: 90vh;
 }
 
 .video_holder_container{
@@ -115,23 +122,37 @@ h2{
 
 .video_holder{
     
-    background-color: hsl(0, 0%, 97%)   ;
+    background-color: #F8E7F6   ;
     border: solid 2px  #4B164C;
     /* box-shadow: 10px 10px hsl(0,0%,93%); */
+    padding-left: 30px;padding-right: 30px;
     
     width: 95%;
     border-radius: 5px;
     min-height: 420px;
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
 
 }
 
 .youtube_video_embed iframe{
     height: 300px;
     width: 533.33px;
+    box-shadow: 10px 10px #4B164C;
+}
+
+.youtube_video_details{
+    min-height:300px ;
+}
+
+.youtube_video_details h2{
+    background-color: #DD88CF;
+    box-shadow: 10px 10px #4B164C;
+    padding: 10px;
+    font-size: 35px;
 }
 
 .ai_textbox_container{
@@ -139,7 +160,7 @@ h2{
     border: solid 2px  #4B164C;
     width: 400px;
     border-radius: 5px;
-    background-color: #F5F5F5;
+    background-color: #F8E7F6;
 
     
 }
@@ -150,6 +171,8 @@ h2{
     margin: 10px;
     border: solid 2px  #4B164C;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -159,12 +182,13 @@ h2{
     border-top-left-radius: 5px;
     outline: none;
     border: none;
+
     border-bottom-left-radius: 5px;
-    font-size: 25px;
+
 }
 
 .textbox_button{
-    width: 10%;
+    width: 20%;
     font-size: 25px;
     font-family: centuryGothic;
     border-top-right-radius: 5px;
