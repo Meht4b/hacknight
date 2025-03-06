@@ -1,60 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="playlist_container">
+      <div class="video_holder_container">
+        <div class="video_holder">
+          <h2>Rust is Killing C++</h2>
+          <div class="youtube_video_embed">
+            <iframe
+              src="https://www.youtube.com/embed/ZQyrrMqLT2s?si=uy4oZv10t3Zptgjw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="video_holder"></div>
 
-        <div class="video_holder_container">
+        <div class="video_holder"></div>
+        <div class="video_holder"></div>
 
-            <div class="video_holder">
-                <h2>Rust is Killing C++</h2>
-                <div class="youtube_video_embed">
-                    
-                    <iframe  src="https://www.youtube.com/embed/ZQyrrMqLT2s?si=uy4oZv10t3Zptgjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>            
-            <div class="video_holder">
+        <div class="video_holder"></div>
 
-            </div>
-            
-            <div class="video_holder">
+        <div class="video_holder"></div>
+        <div class="video_holder"></div>
+      </div>
 
-            </div>
-            <div class="video_holder">
-
-            </div>
-
-            <div class="video_holder">
-
-            </div>
-
-            <div class="video_holder">
-
-            </div>
-            <div class="video_holder">
-
-            </div>
-            
-
-            
-        </div>  
-
-        <div class="ai_textbox_container">
-            <div class="textbox_input_container">
-                <input type="text" class="textbox_input">
-                <button class="textbox_button">+</button>
-            </div>
-        </div> 
-
+      <div class="ai_textbox_container">
+        <div class="textbox_input_container">
+          <input type="text" class="textbox_input" id="text_input" />
+          <button class="textbox_button" id="text_button">+</button>
+        </div>
+      </div>
     </div>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
