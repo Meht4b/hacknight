@@ -22,15 +22,7 @@ const add_button = document.getElementById("text_button");
 
 add_button.addEventListener("click", async () => {
   const query = text_input.value;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  const modified = `Suggest me a few youtube videos on the topic ${query} but send me the reply in json format but in plain text without any prefixes only without any extra responses as an array of objects where each object has a key called title having the value of the title of the video and another key called url with its value as the embedded url to the youtube video and the last key called summary with its value summarizing the video in about 50-100 words.`;
-=======
   const modified = `Suggest me a few youtube videos on the topic ${query} but send me the reply in json format without any prefixes only without any extra responses as an array of objects where each object has a key called title having the value of the title of the video and another key called url with its value as the embedded url to the youtube video and the last key called summary with its value summarizing the video in about 50-100 words.`;
->>>>>>> Stashed changes
-=======
-  const modified = `Suggest me a few youtube videos on the topic ${query} but send me the reply in json format without any prefixes only without any extra responses as an array of objects where each object has a key called title having the value of the title of the video and another key called url with its value as the embedded url to the youtube video and the last key called summary with its value summarizing the video in about 50-100 words.`;
->>>>>>> Stashed changes
   text_input.value = "";
   fetch(url, {
     headers: {
